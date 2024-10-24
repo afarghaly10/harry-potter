@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./fullpage.min.css">
+  <title>Hogwarts</title>
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+
+<body>
+  <main>
+    <header class="header">
+      <nav class="nav-bar">
+        <div id="logo" class="logo-container">
+          <a href=""><img src="./src/assets/images/file..png" width="168" height="61" alt="">
+          </a>
+          <!-- <h3 class="komikult"><span class="logo-line"> |</span> KomiKult</h3> -->
+        </div>
+        <ul id="navItems" class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item">
+            <a href="#scroll-dest">Characters</a> (<span class="items-number"></span>)
+          </li>
+          <li class="nav-item"><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <section class="hero-section">
+        <div class="hero">
+          <img src="./src/assets/images/harryPotterPoster..jpg" alt="" />
+          <h1 class="headline">Hogwarts</h1>
+        </div>
+      </section>
+      <a href="#scroll-dest">
+        <div class="scroll-down"></div>
+      </a>
+    </header>
+    <div class="slider"></div>
+    <div class="voldi-container"><img class="voldi" src="./src/assets/images/voldemort-2..png" alt=""></div>
+    <div id="scroll-dest"></div>
+    <h2 class="char-heading" id="char-heading">Characters</h2>
+    <hr class="solid" />
+    <section class="charct" id="charct">
+      <div class="container">
+        <ul class="charc-list" id="charc-list"></ul>
+      </div>
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <button data-close-button id="close-button" class="close-button">
+          &times
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modal-img" class="modal-img" src="${imageUrl}" alt="" />
+        <p id="modal-desc" class="description">${description}</p>
+      </div>
+      <h2 id="modal-name" class="modal-name">${name}</h2>
+      <div class="comment-section">
+        <div class="comments">
+          <h4 class="comment-count center">
+            Comments (<span id="comment-count"></span>)
+          </h4>
+          <ul id="comment-list" class="display-comments"></ul>
+        </div>
+
+        <h2>Add a comment</h2>
+        <form id="commentForm">
+          <input type="hidden" id="charid" value="" />
+          <input type="text" placeholder="Your name" class="username" id="addName" />
+        </form>
+        <textarea form="commentForm" class="insights" id="insights" cols="30" rows="10"
+          placeholder="Your insights"></textarea>
+        <button type="submit" id="add-button">Add comment</button>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <section class="about" id="about">
+      <div class="container about-container">
+        <h1 class="about-header">About</h1>
+        <hr />
+        <p class="about-p">
+          A list of characters that can be found on the Hogwarts Database.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>Designed By Sami Farghaly</p>
+        <p id="copyright"></p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"
+    integrity="sha512-kgjZw3xjgSUDy9lTU085y+UCVPz3lhxAtdOVkcO4O2dKl2VSBcNsQ9uMg/sXIM4SoOmCiYfyFO/n1/3GSXZtSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
