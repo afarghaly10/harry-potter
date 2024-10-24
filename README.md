@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple steps.
 - [Download the ZIP file from this location](https://github.com/afarghaly10/hogwarts/archive/refs/heads/develop.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
 
 ```ssh
-git clone https://github.com/afarghaly10/hogwarts.git
+git clone https://github.com/afarghaly10/harryPotter.git
 ```
 
 - Once the files are on your machine, open the **hogwarts** folder in [Visual Studio Code](https://code.visualstudio.com/download).
