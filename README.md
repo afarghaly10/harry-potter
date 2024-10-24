@@ -12,7 +12,7 @@ A comic characters list app that displays Harry Potter characters. It also allow
 
 ## Live Demo
 
-- Click [here](https://afarghaly10.github.io/hogwarts/) to view the live demo.
+- Click [here](https://afarghaly10.github.io/harryPotter/) to view the live demo.
 
 ## Getting Started
 
